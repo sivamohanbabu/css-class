@@ -1,146 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--external-->
-    <link rel="stylesheet" href="style.css"/>
-    <!-- <style>
-        .card1{
-             width: 200px;
-            height: 135px;
-            border: 1px solid white;
-            border-radius: 10px;
-            background-color: rgb(69, 129, 228);
-            padding: 12px;
-        }
-     .card2{
-  width: 200px;
-            height: 135px;
-            border: 1px solid white;
-            border-radius: 10px;
-            background-color: rgb(69, 129, 228);
-            padding: 12px;
-     }
-     .card3{
-        width: 200px;
-            height: 135px;
-            border: 1px solid white;
-            border-radius: 10px;
-            background-color: rgb(69, 129, 228);
-            padding: 12px;
-     }
-        h3,p,h4{
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-                    }
-                    p{
-                        font-size: 12px;
-                    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+      font-family: sans-serif;
+    }
 
-                    h4{
-                        margin-bottom: 10px;
-                    }
-                    
-    </style> -->
-<style>
-.card{
-    border: 1px solid black;
-    width: 300px;
-    height: 600px;
-  overflow: hidden;
- text-overflow: ellipsis;
-    margin-left: 30px;
-    padding: 5px;
-}
-.card-title{
-    font-size: 30px;
-    font-weight:500;
-     text-overflow: ellipsis;
-  
-   
-}
-.place{
-    font-size: 18px;
-    color: gray;
-     text-overflow: ellipsis;
-    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-  
-}
-</style>
+    .gallery img {
+      width: 100%;
+      height: auto;
+      
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-
-     <!-- <div style="display: flex;">
-     <div class="card1">
-       <h3>PRE-BOOK OFFER</h3>
-       <h4>Flat 15% OFF</h4>
-       <p>Valid from 12PM to 11:30PM<br> today<br>
-Booking required</p>
-    </div>
-      <div class="card2">
-       <h3>INSTANT OFFER</h3>
-       <h4>Flat 10% OFF</h4>
-       <p>on bill payments</p>
-    </div>
-      <div class="card3">
-       <h3>SURPRISE</h3>
-       <h4>Get a
-scratch card</h4>
-       <p>after every transaction</p>
-    </div>
-    </div> -->
-
-    <section>
-<div style="display: flex;">
-        <div class="card">
-            <img src="./img1.avif" width="300px" />
-            <div class="card-title">
-                Getting There by Rosan Joshi
-            </div>
-            <div class="place">
-                Shilpa kala vedika : Hyderabad
-            </div>
-        </div>
-        <div class="card">
-            <img src="./img2.avif" width="300px" />
-            <div class="card-title">
-                Getting There by Rosan Joshi
-            </div>
-            <div class="place">
-                Shilpa kala vedika : Hyderabad
-            </div>
-        </div>
-        <div class="card">
-            <img src="./img3.avif" width="300px" />
-            <div class="card-title">
-                Getting There by Rosan Joshi
-            </div>
-            <div class="place">
-                Shilpa kala vedika : Hyderabad
-            </div>
-        </div>
-        <div class="card">
-            <img src="./img4.avif" width="300px" />
-            <div class="card-title">
-                Getting There by Rosan Joshi
-            </div>
-            <div class="place">
-                Shilpa kala vedika : Hyderabad
-            </div>
-        </div>
-        </div>
-        <div class="card">
-            <img src="./img5.avif" width="300px" />
-            <div class="card-title">
-                Getting There by Rosan Joshi
-            </div>
-            <div class="place">
-                Shilpa kala vedika : Hyderabad
-            </div>
-        </div>
-    </section>
+  <div class="gallery">
+    <img src="./img1.avif" alt="Image 1" />
+    <img src="./img2.avif" alt="Image 2" />
+    <img src="./img3.avif" alt="Image 3" />
+    <img src="./img4.avif" alt="Image 4" />
+    <img src="./img5.avif" alt="Image 5" />
+  </div>
 </body>
 </html>
